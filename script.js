@@ -51,3 +51,10 @@ function login(event) {
     console.log("Username: " + username);
     console.log("Password: " + password);
 }
+
+const toMyApplicationButton = document.getElementById('toMyApplicationButton');
+
+toMyApplicationButton.addEventListener('click', function () {
+    // Remplacez l'URL du repository GitHub par le vôtre
+    window.location.href = 'https://github.com/votre-utilisateur/votre-repository';
+});

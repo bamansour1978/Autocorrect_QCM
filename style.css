@@ -119,3 +119,37 @@ button:hover {
 #toggleAboutMeButton:not(:last-child) {
     margin-right: 3cm; /* Espacement de 3 cm entre "About Me" et le bouton suivant (si présent) */
 }
+
+/* Ajoutez ces styles à la fin pour espacer la vidéo des boutons */
+.bottom-video {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 20px; /* Ajustez la marge droite selon vos préférences */
+    margin-bottom: 20px; /* Ajustez la marge inférieure selon vos préférences */
+    max-width: 300px; /* Ajustez la largeur maximale de la vidéo selon vos préférences */
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(119, 54, 54); /* Couleur de fond pour le pied de page fixe */
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#toMyApplicationButton {
+    padding: 10px;
+    background-color: #007bff;
+    color: rgb(228, 14, 14);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#toMyApplicationButton:hover {
+    background-color: #0056b3;
+}
