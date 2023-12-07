@@ -1,0 +1,121 @@
+.nav-buttons button.active {
+    background-color: #0b0c0c;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('3.png') center center fixed;
+    background-size: cover;
+    color: rgb(235, 10, 10);
+}
+
+.background-container {
+    background: url('3.png') center center fixed;
+    background-size: cover;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start !important; /* Aligner le texte à gauche */
+    justify-content: center;
+    color: rgb(240, 13, 13);
+    padding: 20px; /* Ajouter un peu d'espacement sur les côtés */
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #007bff;
+    align-self: flex-start !important; /* Aligner le texte à gauche */
+}
+
+.nav-buttons {
+    display: flex;
+    width: 60%; /* Ajustez selon vos préférences */
+    margin: 0 auto; /* Pour centrer les boutons horizontalement */
+}
+
+.nav-buttons button:not(:last-child) {
+    margin-right: 3cm; /* Espacement de 3 cm entre les boutons */
+}
+
+.login-container,
+.contact-container,
+.features-container,
+.about-container {
+    background-color: rgba(15, 15, 15, 0.8);
+    border: 1px solid rgb(175, 202, 19);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none; /* Caché initialement */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input {
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid rgb(29, 167, 11);
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff; /* Nouvelle couleur bleue pour le bouton */
+    color: rgb(223, 12, 12);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#featuresContainer,
+#aboutMeContainer {
+    background-color: rgba(10, 10, 10, 0.8);
+    border: 1px solid rgb(211, 24, 24);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(10, 10, 10, 0.1);
+    display: none; /* Caché initialement */
+    color: rgb(194, 20, 20); /* Nouvelle couleur bleue pour le texte */
+}
+
+/* Ajoutez une marge à droite pour le bouton "Features" */
+#toggleFeaturesButton {
+    margin-right: 3cm; /* Espacement de 3 cm entre "Features" et "About Us" */
+}
+
+/* Ajoutez une marge à droite pour le bouton "About Us" */
+#toggleAboutUsButton {
+    margin-right: 3cm; /* Espacement de 3 cm entre "About Us" et "About Me" */
+}
+
+/* Supprimez la marge droite du dernier bouton */
+#toggleAboutMeButton {
+    margin-right: 0; /* Aucun espacement à droite pour le dernier bouton */
+}
+
+/* Ajoutez une marge à droite pour le bouton "About Me" */
+#toggleAboutMeButton {
+    margin-right: 3cm; /* Espacement de 3 cm entre "About Me" et le bouton suivant (si présent) */
+}
+
+/* Ajoutez une marge à droite pour le bouton "About Me" */
+#toggleAboutMeButton:not(:last-child) {
+    margin-right: 3cm; /* Espacement de 3 cm entre "About Me" et le bouton suivant (si présent) */
+}

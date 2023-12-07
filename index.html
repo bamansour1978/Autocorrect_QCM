@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Autocorrect_QCM</title>
+</head>
+<body>
+    <div class="header">
+        <h1 class="app-name">Autocorrect_QCM</h1>
+    </div>
+    <div class="background-container">
+        <div class="nav-buttons">
+            <!-- Ajoutez les attributs onclick pour chaque bouton -->
+            <button id="toggleLoginFormButton" onclick="toggleVisibility('loginContainer')">Connexion</button>
+            <button id="toggleContactButton" onclick="toggleVisibility('contactContainer')">Contact</button>
+            <button id="toggleFeaturesButton" onclick="toggleVisibility('featuresContainer')">Features</button>
+            <button id="toggleAboutUsButton" onclick="toggleVisibility('aboutUsContainer')">About Us</button>
+            <button id="toggleAboutMeButton" onclick="toggleVisibility('aboutMeContainer')">About Me</button>
+        </div>
+        <div class="login-container" id="loginContainer">
+            <form id="loginForm" onsubmit="login(event)">
+                <h2>Login</h2>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+        <div class="contact-container" id="contactContainer">
+            <h2>Contact</h2>
+            <p>Github: <a href="https://github.com/bamansour1978" target="_blank">https://github.com/bamansour1978</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/bamansour-abdennebi-147290210/" target="_blank">https://www.linkedin.com/in/bamansour-abdennebi-147290210/</a></p>
+            <p>Twitter: <a href="https://twitter.com/BAMANSOUR_A" target="_blank">https://twitter.com/BAMANSOUR_A</a></p>
+        </div>
+        <div class="features-container" id="featuresContainer">
+            <h2>Features</h2>
+            <p>Feature 1</p>
+            <p>Feature 2</p>
+        </div>
+        <div class="about-container" id="aboutUsContainer">
+            <h2>About Us</h2>
+            <p>My name is BAMANSOUR ABDENNEBI</p>
+        </div>
+        <div class="about-container" id="aboutMeContainer">
+            <h2>About Me</h2>
+            <p>My name is BAMANSOUR ABDENNEBI</p>
+        </div>        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
